@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Parfum | L'Essence de l'Élégance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo text-gold">Air Parfum</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Maison</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="decantes.html">Décantes</a></li>
+                <li><a href="createur.html">L'Atelier</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <h1 class="text-gold">L'Art de l'Invisible</h1>
+        <p>Des fragrances narratives, conçues comme des souvenirs que l'on porte sur soi.</p>
+        <a href="collection.html" class="btn">Découvrir la Collection</a>
+    </section>
+
+    <main class="container">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 6rem auto;">
+            <h2 class="section-title">Notre Manifeste</h2>
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; color: #555;">
+                "Nous ne créons pas simplement des parfums. Nous distillons des émotions, des lieux et des instants suspendus dans le temps."
+            </p>
+        </div>
+
+        <h2 class="section-title">Les Incontournables</h2>
+        <p class="section-subtitle">Sélectionnés par nos Maîtres Parfumeurs</p>
+        
+        <div class="product-grid">
+            <!-- PRODUIT 1 -->
+            <article class="product-card reveal">
+                <div class="image-wrapper">
+                    <img src="imagination.avif" alt="imagination" class="product-image">
+                    <div class="product-overlay">
+                       <!-- Boutons d'ajout simples -->
+<button class="btn" onclick="ajouterAuPanier('Parfum Or', 185)">Ajouter au Panier</button>
+
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Imagination</h3>
+                    <span class="price">300,00 €</span>
+                    <p class="desc">Vanille de Madagascar, Ambre Gris et une touche de Safran.</p>
+                </div>
+            </article>
+
+            <!-- PRODUIT 2 -->
+            <article class="product-card reveal">
+                <div class="image-wrapper">
+                    <img src="creed aventus.webp" alt="Nuit Noire" class="product-image">
+                    <div class="product-overlay">
+                       <button class="btn" onclick="ajouterAuPanier('Nuit Noire', 210)">Ajouter au Panier</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Creed Aventus</h3>
+                    <span class="price">210,00 €</span>
+                    <p class="desc">Cuir de Russie, Tabac blond et Bois de Oud fumé.</p>
+                </div>
+            </article>
+
+            <!-- PRODUIT 3 -->
+            <article class="product-card reveal">
+                <div class="image-wrapper">
+                    <img src="le beau.webp" alt="le beau le parfum" class="product-image">
+                    <div class="product-overlay">
+                       <button class="btn" onclick="ajouterAuPanier('Nuit Noire', 210)">Ajouter au Panier</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>le beau le parfum</h3>
+                    <span class="price">122,00 €</span>
+                    <p class="desc">Rose de Damas, Pivoine blanche et Musc de peau.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo text-gold">Air Parfum</div>
+        <p>&copy; 2026 Air Parfum Paris. Tous droits réservés.</p>
+    </footer>
+
+    <!--  LIEN VERS LE JAVASCRIPT  -->
+    <script src="script.js"></script>
+</body>
+</html>

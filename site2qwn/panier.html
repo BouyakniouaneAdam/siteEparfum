@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier & Livraison | Air Parfum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo text-gold">Air Parfum</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Maison</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="decantes.html">Décantes</a></li>
+                <li><a href="createur.html">L'Atelier</a></li>
+                <li><a href="panier.html" class="active">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Finaliser votre Commande</h2>
+        
+        <div class="checkout-layout">
+            <!-- Résumé (Fond sombre pour contraste luxe) -->
+            <section class="cart-summary">
+                <h3>Votre Sélection</h3>
+                
+                <div class="cart-line">
+                    <div>
+                        <div class="name">Élixir d'Or</div>
+                        <small style="color: #888;">Original - 50ml</small>
+                    </div>
+                    <div class="price">185,00 €</div>
+                </div>
+                
+                <div class="cart-line">
+                    <div>
+                        <div class="name">Nuit Noire</div>
+                        <small style="color: #888;">Décante 10ml</small>
+                    </div>
+                    <div class="price">35,00 €</div>
+                </div>
+
+                <div class="cart-line">
+                    <div>
+                        <div class="name">Livraison Express Sécurisée</div>
+                    </div>
+                    <div class="price">Gratuite</div>
+                </div>
+
+                <div class="cart-total-line">
+                    <span>Total</span>
+                    <span class="text-gold">220,00 €</span>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 0.8rem; color: #888; text-align: center;">
+                    🔒 Paiement 100% sécurisé et crypté.
+                </p>
+            </section>
+
+            <!-- Formulaire (Fond clair, épuré) -->
+            <section class="form-container" style="padding: 3rem; margin: 0;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 2rem; font-family: 'Cormorant Garamond', serif;">Coordonnées & Livraison</h3>
+                
+                <form action="#" id="form-paiement">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="form-group">
+                            <label class="form-label">Prénom</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Nom</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Adresse complète</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="form-group">
+                            <label class="form-label">Code Postal</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Ville</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <h3 style="font-size: 1.8rem; margin: 3rem 0 2rem 0; font-family: 'Cormorant Garamond', serif;">Paiement</h3>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Numéro de carte</label>
+                        <input type="text" class="form-input" placeholder="0000 0000 0000 0000" required>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="form-group">
+                            <label class="form-label">Expiration</label>
+                            <input type="text" class="form-input" placeholder="MM/AA" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">CVV</label>
+                            <input type="text" class="form-input" placeholder="123" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn" id="btn-payer" style="width: 100%; margin-top: 2rem; background: var(--dark); color: var(--gold-solid); border-color: var(--dark);">
+                        Payer 220,00 €
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo text-gold">Air Parfum</div>
+        <p>&copy; 2026 Air Parfum Paris. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

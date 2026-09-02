@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Atelier | Air Parfum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo text-gold">Air Parfum</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Maison</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="decantes.html">Décantes</a></li>
+                <li><a href="createur.html" class="active">L'Atelier</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Créez Votre Signature</h2>
+        <p class="section-subtitle">Une expérience olfactive sur mesure</p>
+        
+        <form class="form-container" action="panier.html">
+            <div class="form-group">
+                <label class="form-label">Nommez votre création</label>
+                <input type="text" class="form-input" placeholder="Ex: Souvenir d'Été" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Notes de Tête (L'envol)</label>
+                <div class="options-grid">
+                    <div class="option-item"><input type="checkbox" id="t1" name="tete" value="agrumes"><label for="t1" class="option-label">Agrumes</label></div>
+                    <div class="option-item"><input type="checkbox" id="t2" name="tete" value="menthe"><label for="t2" class="option-label">Menthe</label></div>
+                    <div class="option-item"><input type="checkbox" id="t3" name="tete" value="poivre"><label for="t3" class="option-label">Poivre Rose</label></div>
+                    <div class="option-item"><input type="checkbox" id="t4" name="tete" value="bergamote"><label for="t4" class="option-label">Bergamote</label></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Notes de Cœur (L'âme)</label>
+                <div class="options-grid">
+                    <div class="option-item"><input type="checkbox" id="c1" name="coeur" value="rose"><label for="c1" class="option-label">Rose</label></div>
+                    <div class="option-item"><input type="checkbox" id="c2" name="coeur" value="jasmin"><label for="c2" class="option-label">Jasmin</label></div>
+                    <div class="option-item"><input type="checkbox" id="c3" name="coeur" value="lavande"><label for="c3" class="option-label">Lavande</label></div>
+                    <div class="option-item"><input type="checkbox" id="c4" name="coeur" value="epices"><label for="c4" class="option-label">Épices</label></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Notes de Fond (Le sillage)</label>
+                <div class="options-grid">
+                    <div class="option-item"><input type="checkbox" id="f1" name="fond" value="vanille"><label for="f1" class="option-label">Vanille</label></div>
+                    <div class="option-item"><input type="checkbox" id="f2" name="fond" value="bois"><label for="f2" class="option-label">Bois de Cèdre</label></div>
+                    <div class="option-item"><input type="checkbox" id="f3" name="fond" value="musc"><label for="f3" class="option-label">Musc Blanc</label></div>
+                    <div class="option-item"><input type="checkbox" id="f4" name="fond" value="ambre"><label for="f4" class="option-label">Ambre</label></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Concentration</label>
+                <div class="options-grid">
+                    <div class="option-item"><input type="radio" id="r1" name="concentration" value="edt" checked><label for="r1" class="option-label">Eau de Toilette</label></div>
+                    <div class="option-item"><input type="radio" id="r2" name="concentration" value="edp"><label for="r2" class="option-label">Eau de Parfum</label></div>
+                    <div class="option-item"><input type="radio" id="r3" name="concentration" value="extrait"><label for="r3" class="option-label">Extrait</label></div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <button type="submit" class="btn">Commander ma Création Unique</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="logo text-gold">Air Parfum</div>
+        <p>&copy; 2026 Air Parfum Paris. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
